@@ -11,6 +11,10 @@ public class TestAtributos {
 		cliente1.setNombreCerveZa("Club");
 		cliente1.setDescipcion("Cervesa con aroma mas intenso");
 		cliente1.imprimir();
+		
+		cliente1.setNombreCerveZa("Corona");
+		cliente1.setPrecioPorMl(0.64);
+		cliente1.imprimir();
 
 	}
 

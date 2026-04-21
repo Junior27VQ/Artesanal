@@ -9,6 +9,9 @@ public class Maquina {
 	private String codigo;
 	
 	
+	public Maquina() {
+		super();
+	}
 	public Maquina(String nombreCerveza, String descripcion, double precioPorMl, double capacidadMaxima, String codigo) {
 		super();
 		this.nombreCerveza = nombreCerveza;
@@ -76,6 +79,7 @@ public class Maquina {
 			cantidadActual=cantidadActual+cantidad;
 			return true;
 		}else {
+			System.out.println("Se lleno el contenedor");
 			return false;}
 	}
 	public double servirCerveza(double cantidad) {
