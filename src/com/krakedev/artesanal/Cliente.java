@@ -8,7 +8,7 @@ public class Cliente {
 	private int codigo;
 	private int ultimoCodigo=100;
 	private double totalConsumido;
-	private ArrayList<Cliente> clientes;
+	private ArrayList<Cliente> clientes=new ArrayList<Cliente>();
 	
 	public Cliente() {}
 	public Cliente(String nombre, String cedula) {
