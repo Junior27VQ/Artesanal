@@ -1,11 +1,14 @@
 package com.krakedev.artesanal;
 
+import java.util.ArrayList;
+
 public class Cliente {
 	private String nombre;
 	private String cedula;
 	private int codigo;
+	private int ultimoCodigo=100;
 	private double totalConsumido;
-	
+	private ArrayList<Cliente> clientes;
 	
 	public Cliente(String nombre, String cedula) {
 		super();
@@ -30,12 +33,18 @@ public class Cliente {
 	public void setCodigo(int codigo) {
 		this.codigo = codigo;
 	}
+	
 	public double getTotalConsumido() {
 		return totalConsumido;
 	}
 	public void setTotalConsumido(double totalConsumido) {
 		this.totalConsumido = totalConsumido;
 	}
-	
+	public void registrarCliente(String nombre, String cedula) {
+		Cliente c=new Cliente(nombre, cedula);
+		c.setCodigo(ultimoCodigo);
+		clientes.add(c);
+		ultimoCodigo++;
+	}
 
 }
