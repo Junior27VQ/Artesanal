@@ -15,7 +15,7 @@ public class TestAtributos {
 		cliente1.setNombreCerveZa("Corona");
 		cliente1.setPrecioPorMl(0.64);
 		cliente1.imprimir();
-
+		
 	}
 
 }
