@@ -10,6 +10,7 @@ public class Cliente {
 	private double totalConsumido;
 	private ArrayList<Cliente> clientes;
 	
+	public Cliente() {}
 	public Cliente(String nombre, String cedula) {
 		super();
 		this.nombre = nombre;
