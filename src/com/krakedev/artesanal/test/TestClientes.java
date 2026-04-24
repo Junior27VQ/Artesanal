@@ -10,7 +10,7 @@ public class TestClientes {
 		Cliente c=new Cliente();
 		
 		c.registrarCliente("Ramon", "0147852369");
-		System.out.println(c.getNombre()+" "+c.getCedula());
+		System.out.println(c.getNombre()+" "+c.getCedula()+":"+c.getCodigo());
 
 	}
 
