@@ -21,5 +21,10 @@ public class NegocioMejorado {
 		String codigo="M-"+aleatorio;
 		return codigo;
 	}
+	public void agregarMaquina(String nombre, String descripcion, double precio) {
+		String codigo=generarCodigo();
+		Maquina maquina=new Maquina(nombre,descripcion,precio,codigo);
+		maquinas.add(maquina);
+	}
 
 }
