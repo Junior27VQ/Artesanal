@@ -12,7 +12,8 @@ public class TestNegocio {
 		System.out.println("Nombre: "+n1.getMaquina1());
 		
 		Maquina m1=n1.getMaquina1();
-		double capacidad = m1.getCapasidadMAxima();
+		double capacidad = m1.getCapasidadMAxima(); 
+		System.out.println(capacidad);
 	}
 
 }
