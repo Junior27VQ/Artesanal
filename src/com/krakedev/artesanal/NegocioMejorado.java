@@ -90,5 +90,13 @@ public class NegocioMejorado {
 		double s=m.servirCerveza(cantidad);
 		registrarConsumo(c,m,s);
 	}
+	public double consultarValoresVendidos() {
+		double total=0;
+		for(int i=0; i<clientes.size(); i++) {
+			Cliente c=clientes.get(i);
+			total+=c.getTotalConsumido();
+		}
+		return total;
+	}
 
 }
