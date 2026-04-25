@@ -65,5 +65,11 @@ public class Cliente {
 		}
 		return null;
 	}
+	public void consumirCerveza(int codigoCliente, String codigoMaquina, double cantidad) {
+		NegocioMejorado nm=new NegocioMejorado();
+		Maquina m=nm.recuperarMaquina(codigoMaquina);
+		Cliente c=buscarClientePorCodigo(codigoCliente);
+		double s=m.servirCerveza(cantidad);
+	}
 
 }
